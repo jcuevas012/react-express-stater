@@ -1,0 +1,24 @@
+{
+  "name": "react-express-starter",
+  "version": "1.0.0",
+  "description": "This is a starter project for react and express",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \" "
+  },
+  "author": "Jorge Cuevas",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
